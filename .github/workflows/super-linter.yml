@@ -1,0 +1,18 @@
+---
+name: Super Linter
+
+on:
+  pull_request:
+    branches:
+      - main
+
+permissions: {}
+
+jobs:
+  super-linter:
+    name: Super Linter
+    permissions:
+      contents: read
+      packages: read
+      statuses: write
+    uses: ministryofjustice/data-platform-github-actions/.github/workflows/super-linter.yml@7e871a7cdc787dd0fb4dee753f43c7f54c7913f8 # v1.1.1
