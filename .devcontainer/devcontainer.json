@@ -2,7 +2,6 @@
   "name": "terraform-aws-data-platform-lakeformation",
   "image": "ghcr.io/ministryofjustice/devcontainer-base:latest",
   "features": {
-    "ghcr.io/devcontainers/features/github-cli:": {},
     "ghcr.io/ministryofjustice/devcontainer-feature/astral:": {},
     "ghcr.io/ministryofjustice/devcontainer-feature/terraform:": {}
   },
