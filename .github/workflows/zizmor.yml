@@ -1,0 +1,21 @@
+---
+name: Zizmor
+
+on:
+  pull_request:
+    branches:
+      - main
+  push:
+    branches:
+      - main
+
+permissions: {}
+
+jobs:
+  zizmor:
+    name: Zizmor
+    permissions:
+      actions: read
+      contents: read
+      security-events: write
+    uses: ministryofjustice/data-platform-github-actions/.github/workflows/zizmor.yml@7e871a7cdc787dd0fb4dee753f43c7f54c7913f8 # v1.1.1
