@@ -10,7 +10,7 @@ variable "read_only_admins" {
 }
 
 variable "trusted_resource_owners" {
-  description = "List of the resource-owning account IDs that the caller's account can use to share their user access details"
+  description = "Set of the resource-owning account IDs that the caller's account can use to share their user access details"
   type        = set(string)
   default     = []
 }
