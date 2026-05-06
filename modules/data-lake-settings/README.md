@@ -1,5 +1,7 @@
 # Data Lake Settings
 
+<!-- prettier-ignore-start -->
+
 <!-- BEGIN_TF_DOCS -->
 ## Requirements
 
@@ -37,3 +39,5 @@ No modules.
 
 No outputs.
 <!-- END_TF_DOCS -->
+
+<!-- prettier-ignore-end -->
