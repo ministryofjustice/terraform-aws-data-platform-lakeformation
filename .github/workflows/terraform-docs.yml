@@ -6,8 +6,8 @@ on:
     branches:
       - main
     paths:
-      - ".github/workflows/documentation.yml"
-      - "modules/**/README.md"
+      - ".github/workflows/terraform-docs.yml"
+      - "modules/**"
 
 permissions: {}
 
@@ -36,3 +36,7 @@ jobs:
         uses: terraform-docs/gh-actions@6de6da0cefcc6b4b7a5cbea4d79d97060733093c # v1.4.1
         with:
           config-file: .terraform-docs.yml
+
+      - name: Check Generated Module READMEs
+        id: check_generated_module_readmes
+        run: git diff --exit-code -- ':(glob)modules/**/README.md'
