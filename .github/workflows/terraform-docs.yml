@@ -7,6 +7,7 @@ on:
       - main
     paths:
       - ".github/workflows/terraform-docs.yml"
+      - ".terraform-docs.yml"
       - "modules/**"
 
 permissions: {}
