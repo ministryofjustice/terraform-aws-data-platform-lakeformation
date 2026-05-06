@@ -2,7 +2,7 @@
 name: Terraform Docs
 
 on:
-  push:
+  pull_request:
     branches:
       - main
     paths:
