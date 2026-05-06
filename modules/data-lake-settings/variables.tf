@@ -16,7 +16,7 @@ variable "trusted_resource_owners" {
 }
 
 variable "cross_account_version" {
-  description = "Version of cross-account permissions, see https://docs.aws.amazon.com/lake-formation/latest/dg/optimize-ram.html"
+  description = "Version of cross-account permissions. See [AWS Lake Formation cross-account optimization](https://docs.aws.amazon.com/lake-formation/latest/dg/optimize-ram.html)."
   type        = string
   default     = "5"
 }
