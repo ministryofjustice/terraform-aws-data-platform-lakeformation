@@ -35,7 +35,9 @@ Manages AWS Lake Formation data lake storage.
 
 ## Inputs
 
-No inputs.
+| Name | Description | Type | Default | Required |
+|------|-------------|------|---------|:--------:|
+| <a name="input_lakeformation_access_role_arn"></a> [lakeformation\_access\_role\_arn](#input\_lakeformation\_access\_role\_arn) | ARN of Data Platform Governance IAM role | `string` | n/a | yes |
 
 ## Outputs
 

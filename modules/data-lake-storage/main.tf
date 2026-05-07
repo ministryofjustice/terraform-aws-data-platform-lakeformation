@@ -26,7 +26,7 @@ module "kms_key" {
         },
         {
           type        = "AWS"
-          identifiers = ["arn:aws:iam::${data.aws_caller_identity.current.account_id}:role/aws-service-role/lakeformation.amazonaws.com/AWSServiceRoleForLakeFormationDataAccess"]
+          identifiers = [var.lakeformation_access_role_arn]
         }
       ]
     }
