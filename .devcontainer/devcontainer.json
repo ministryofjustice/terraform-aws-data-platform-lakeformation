@@ -3,7 +3,9 @@
   "image": "ghcr.io/ministryofjustice/devcontainer-base:latest",
   "features": {
     "ghcr.io/ministryofjustice/devcontainer-feature/astral:": {},
-    "ghcr.io/ministryofjustice/devcontainer-feature/terraform:": {}
+    "ghcr.io/ministryofjustice/devcontainer-feature/terraform:": {
+      "terraformDocsVersion": "v0.20.0"
+    }
   },
   "customizations": {
     "vscode": {
