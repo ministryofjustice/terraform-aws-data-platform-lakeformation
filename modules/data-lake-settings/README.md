@@ -1,6 +1,6 @@
 # Data Lake Settings
 
-Manages Terraform Data Lake Settings
+Manages AWS Lake Formation data lake settings
 
 <!-- prettier-ignore-start -->
 
