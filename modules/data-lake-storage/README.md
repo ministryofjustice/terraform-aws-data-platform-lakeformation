@@ -4,7 +4,6 @@ Manages AWS Lake Formation data lake storage.
 
 <!-- prettier-ignore-start -->
 <!-- markdownlint-disable -->
-<!-- jscpd:ignore-start -->
 <!-- textlint-disable terminology -->
 
 <!-- BEGIN_TF_DOCS -->
@@ -51,6 +50,5 @@ Manages AWS Lake Formation data lake storage.
 <!-- END_TF_DOCS -->
 
 <!-- textlint-enable terminology -->
-<!-- jscpd:ignore-end -->
 <!-- markdownlint-enable -->
 <!-- prettier-ignore-end -->
