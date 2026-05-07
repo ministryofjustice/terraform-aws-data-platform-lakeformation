@@ -19,4 +19,11 @@ repos:
     hooks:
       - id: zizmor
 
+  - repo: https://github.com/terraform-docs/terraform-docs
+    rev: b8f73e22eae2560d55ec5e9da62251c068fa9ccb  # frozen: v0.23.0
+    hooks:
+      - id: terraform-docs-system
+        args: ["."]
+        pass_filenames: false
+
 exclude: .devcontainer/devcontainer-lock.json
