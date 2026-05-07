@@ -4,6 +4,8 @@ Manages AWS Lake Formation data lake storage.
 
 <!-- prettier-ignore-start -->
 <!-- markdownlint-disable -->
+<!-- jscpd:ignore-start -->
+<!-- textlint-disable terminology -->
 
 <!-- BEGIN_TF_DOCS -->
 ## Requirements
@@ -48,5 +50,7 @@ Manages AWS Lake Formation data lake storage.
 | <a name="output_s3_bucket_arn"></a> [s3\_bucket\_arn](#output\_s3\_bucket\_arn) | S3 Bucket ARN |
 <!-- END_TF_DOCS -->
 
+<!-- textlint-enable terminology -->
+<!-- jscpd:ignore-end -->
 <!-- markdownlint-enable -->
 <!-- prettier-ignore-end -->

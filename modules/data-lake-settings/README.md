@@ -4,6 +4,7 @@ Manages AWS Lake Formation data lake settings
 
 <!-- prettier-ignore-start -->
 <!-- markdownlint-disable -->
+<!-- jscpd:ignore-start -->
 
 <!-- BEGIN_TF_DOCS -->
 ## Requirements
@@ -43,5 +44,6 @@ No modules.
 No outputs.
 <!-- END_TF_DOCS -->
 
+<!-- jscpd:ignore-end -->
 <!-- markdownlint-enable -->
 <!-- prettier-ignore-end -->
