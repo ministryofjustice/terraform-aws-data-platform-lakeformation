@@ -16,7 +16,7 @@ module "kms_key" {
 
   enable_default_policy = true
 
-  alias = ["s3/${local.bucket_name}"]
+  aliases = ["s3/${local.bucket_name}"]
 
   key_statements = [
     {
