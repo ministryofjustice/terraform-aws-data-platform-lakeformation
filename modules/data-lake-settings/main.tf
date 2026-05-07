@@ -7,3 +7,7 @@ resource "aws_lakeformation_data_lake_settings" "main" {
     "CROSS_ACCOUNT_VERSION" = var.cross_account_version
   }
 }
+
+resource "aws_iam_service_linked_role" "lakeformation" {
+  aws_service_name = "lakeformation.amazonaws.com"
+}
