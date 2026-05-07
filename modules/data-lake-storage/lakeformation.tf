@@ -1,4 +1,3 @@
-// TODO (@jacobwoffenden): Check this is required
 resource "aws_lakeformation_permissions" "share_data_location" {
   principal                     = var.governance_account_id
   permissions                   = ["DATA_LOCATION_ACCESS"]
