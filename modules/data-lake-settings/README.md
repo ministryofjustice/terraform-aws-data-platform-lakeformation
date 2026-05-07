@@ -1,5 +1,7 @@
 # Data Lake Settings
 
+Manages Terraform Data Lake Settings
+
 <!-- prettier-ignore-start -->
 
 <!-- BEGIN_TF_DOCS -->
