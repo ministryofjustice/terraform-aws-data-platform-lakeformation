@@ -33,7 +33,7 @@ module "lakeformation_access_iam_role" {
     S3BucketAccess = {
       effect    = "Allow"
       actions   = ["s3:ListBucket"]
-      resources = [module.data_lake_storage_s3_bucket.s3_bucket_arn]
+      resources = [module.s3_bucket.s3_bucket_arn]
     }
     S3ObjectAccess = {
       effect = "Allow"
@@ -42,7 +42,7 @@ module "lakeformation_access_iam_role" {
         "s3:GetObject",
         "s3:PutObject"
       ]
-      resources = ["${module.data_lake_storage_s3_bucket.s3_bucket_arn}/*"]
+      resources = ["${module.s3_bucket.s3_bucket_arn}/*"]
     }
   }
 }
