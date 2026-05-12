@@ -8,6 +8,14 @@ resource "aws_lakeformation_data_lake_settings" "main" {
   }
 }
 
-resource "aws_iam_service_linked_role" "lakeformation" {
-  aws_service_name = "lakeformation.amazonaws.com"
+# resource "aws_iam_service_linked_role" "lakeformation" {
+#   aws_service_name = "lakeformation.amazonaws.com"
+# }
+
+removed {
+  from = aws_iam_service_linked_role.lakeformation
+
+  lifecycle {
+    destroy = false
+  }
 }
