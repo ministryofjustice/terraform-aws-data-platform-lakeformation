@@ -26,7 +26,8 @@ module "lakeformation_access_iam_role" {
         "kms:Decrypt",
         "kms:DescribeKey",
         "kms:Encrypt",
-        "kms:GenerateDataKey"
+        "kms:GenerateDataKey",
+        "kms:ReEncrypt*"
       ]
       resources = [module.kms_key.key_arn]
     }

@@ -35,7 +35,6 @@ Manages AWS Lake Formation data lake storage.
 | [aws_lakeformation_permissions.share_data_location](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/lakeformation_permissions) | resource |
 | [aws_lakeformation_resource.s3_bucket](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/lakeformation_resource) | resource |
 | [aws_caller_identity.current](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/data-sources/caller_identity) | data source |
-| [aws_iam_policy_document.s3_bucket_policy](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/data-sources/iam_policy_document) | data source |
 | [aws_region.current](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/data-sources/region) | data source |
 
 ## Inputs
@@ -43,7 +42,6 @@ Manages AWS Lake Formation data lake storage.
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
 | <a name="input_governance_account_id"></a> [governance\_account\_id](#input\_governance\_account\_id) | AWS Account ID of the Data Platform Governance account | `string` | n/a | yes |
-| <a name="input_lakeformation_access_role_arn"></a> [lakeformation\_access\_role\_arn](#input\_lakeformation\_access\_role\_arn) | ARN of Data Platform Governance IAM role | `string` | n/a | yes |
 
 ## Outputs
 
