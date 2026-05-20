@@ -7,7 +7,7 @@ module "kms_key" {
 
   key_statements = [
     {
-      sid    = "AllowLakeFormationAccess"
+      sid    = "AllowLakeFormationService"
       effect = "Allow"
       actions = [
         "kms:Decrypt",
