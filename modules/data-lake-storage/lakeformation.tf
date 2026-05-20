@@ -4,7 +4,7 @@ resource "aws_lakeformation_resource" "s3_bucket" {
 }
 
 resource "aws_lakeformation_permissions" "share_data_location" {
-  principal                     = var.governance_account_id
+  principal                     = var.data_platform_governance_account_id
   permissions                   = ["DATA_LOCATION_ACCESS"]
   permissions_with_grant_option = ["DATA_LOCATION_ACCESS"]
 
