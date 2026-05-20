@@ -27,7 +27,6 @@ No modules.
 
 | Name | Type |
 |------|------|
-| [aws_iam_service_linked_role.lakeformation](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/iam_service_linked_role) | resource |
 | [aws_lakeformation_data_lake_settings.main](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/lakeformation_data_lake_settings) | resource |
 
 ## Inputs

@@ -8,15 +8,10 @@ resource "aws_lakeformation_data_lake_settings" "main" {
   }
 }
 
-// TODO: is this required? if not remove it, and add the removed block back in
-resource "aws_iam_service_linked_role" "lakeformation" {
-  aws_service_name = "lakeformation.amazonaws.com"
+removed {
+  from = aws_iam_service_linked_role.lakeformation
+
+  lifecycle {
+    destroy = false
+  }
 }
-
-# removed {
-#   from = aws_iam_service_linked_role.lakeformation
-
-#   lifecycle {
-#     destroy = false
-#   }
-# }
