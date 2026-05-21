@@ -70,6 +70,12 @@ module "dbt_access_iam_role" {
 
   create_inline_policy = true
   inline_policy_permissions = {
+    /* TODO: Scope Athena and Glue permissions */
+    AthenaAccess = {
+      effect    = "Allow"
+      actions   = ["athena:*"]
+      resources = ["*"]
+    }
     GlueAccess = {
       effect    = "Allow"
       actions   = ["glue:*"]
