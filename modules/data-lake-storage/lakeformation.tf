@@ -12,3 +12,13 @@ resource "aws_lakeformation_permissions" "share_data_location" {
     arn = module.s3_bucket.s3_bucket_arn
   }
 }
+
+resource "aws_lakeformation_permissions" "share_data_location_dbt_access" {
+  principal                     = module.dbt_access_iam_role.arn
+  permissions                   = ["DATA_LOCATION_ACCESS"]
+  permissions_with_grant_option = ["DATA_LOCATION_ACCESS"]
+
+  data_location {
+    arn = module.s3_bucket.s3_bucket_arn
+  }
+}
