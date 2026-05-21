@@ -98,8 +98,11 @@ module "dbt_access_iam_role" {
       resources = ["*"]
     }
     S3BucketAccess = {
-      effect    = "Allow"
-      actions   = ["s3:ListBucket"]
+      effect = "Allow"
+      actions = [
+        "s3:GetBucketLocation",
+        "s3:ListBucket"
+      ]
       resources = [module.s3_bucket.s3_bucket_arn]
     }
     S3ObjectAccess = {
